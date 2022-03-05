@@ -8,7 +8,7 @@
     // Call the function below when this script loads, and it will loop every frame.
     mute();
 
-    // This function just calls the other two
+    // This function just calls the other two every frame.
     function mute() {
         // Try to click both buttons
         try {
@@ -19,8 +19,11 @@
             // It's not like we need to log an error every frame or anything.
         }
 
-        // Run the mute function (this function) every frame.
-        // Is this overkill?  Yes.  Should spelltable let us disable microphone access while using the camera?  Yes.
+
+        // Run again next frame.
+        // Is this overkill to run every frame instead of every few seconds?  Yes.
+        // Would a mutation observer be a better (but more complex) solution here?  Yes.
+        // Should spelltable natively let us disable microphone access while using the camera?  Yes.
         requestAnimationFrame(mute);
     }
 
