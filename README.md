@@ -1,6 +1,8 @@
 # Silence Spelltable
 
-A simple extension that just clicks the mute button whenever it's visible on [Spelltable][].
+A simple extension that just clicks the mute button whenever it's visible on [Spelltable][], for players who use Discord or other options to talk to each other.
+
+Wizards of the Coast/Spelltable team, please just let us reliably disable our microphones so I don't have to maintain this extension.
 
 ## Is this safe?
 
