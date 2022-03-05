@@ -1,10 +1,10 @@
 {
   "scripts": {
-    "build": "npm run build:firefox && npm run sign:firefox",
-    "build:firefox": "web-ext build --source-dir ./src --artifacts-dir ./dist",
-    "sign:firefox": "web-ext sign --channel=unlisted --api-key $MOZILLA_API_KEY --api-secret $MOZILLA_API_SECRET"
+    "build": "npm run build:firefox && npm run build:chrome",
+    "build:chrome": "xt-build --env prod --platform chrome --config chrome.xtbuild.json",
+    "build:firefox": "xt-build --env prod --platform firefox --config firefox.xtbuild.json"
   },
   "devDependencies": {
-    "web-ext": "^6.7.0"
+    "extension-cli": "^1.2.4"
   }
 }

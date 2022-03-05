@@ -1,0 +1,6 @@
+{
+    "dist": "./build",
+    "src": "./src",
+    "releases": "./dist",
+    "release_name": "silence_spelltable_chrome_edge"
+}
