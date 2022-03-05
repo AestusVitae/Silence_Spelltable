@@ -10,8 +10,14 @@
 
     // This function just calls the other two
     function mute() {
-        clickMuteButton();
-        clickMuteSvgButton();
+        // Try to click both buttons
+        try {
+            clickMuteButton();
+            clickMuteSvgButton();
+        } catch(e) {
+            // If anything goes wrong, we'll just do nothing instead until the next frame.
+            // It's not like we need to log an error every frame or anything.
+        }
 
         // Run the mute function (this function) every frame.
         // Is this overkill?  Yes.  Should spelltable let us disable microphone access while using the camera?  Yes.
