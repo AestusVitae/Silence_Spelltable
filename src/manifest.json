@@ -1,0 +1,7 @@
+{
+    "manifest_version": 2,
+    "version": "{{VERSION}}",
+    "name": "Silence Spelltable",
+    "description": "Automatically mute your own microphone and speakers on spelltable.com",
+    "author": "Aestus Vitae"
+}
