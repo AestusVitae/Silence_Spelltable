@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "version": "{{VERSION}}",
     "name": "Silence Spelltable",
-    "description": "Automatically mute your own microphone and speakers on spelltable.com",
+    "description": "Automatically mute your own microphone on spelltable.com",
     "author": "Aestus Vitae",
     "content_scripts": [{
         "matches": [ "https://spelltable.wizards.com/game/*" ],
