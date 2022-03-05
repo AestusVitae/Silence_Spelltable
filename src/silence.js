@@ -2,6 +2,9 @@
 // If you're curious: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 "use strict"
 
+// Print a message to the debug console so we know the extension loaded.
+console.log('Loaded SilenceSpelltable');
+
 // The below line and the last line in the file `})();` are just javascript nonsense.
 // If you're curious why: https://developer.mozilla.org/en-US/docs/Glossary/IIFE
 (() => {
@@ -47,6 +50,9 @@
 
         // Make sure we found a button before we try to click it.
         if(button !== null) {
+            // Print a message to the debug console to say we're actually trying to mute.
+            console.log('Muting');
+
             // Fake a click on the button.
             button.dispatchEvent(click);
         }
